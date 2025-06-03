@@ -1,0 +1,22 @@
+﻿apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: team-b-project
+  namespace: argocd
+spec:
+  description: Proyecto para team-b
+  sourceRepos:
+  - '*'
+  destinations:
+  - namespace: team-b-dev
+    server: https://kubernetes.default.svc
+  - namespace: team-b-test
+    server: https://kubernetes.default.svc
+  - namespace: team-b-prod
+    server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  namespaceResourceWhitelist:
+  - group: '*'
+    kind: '*'

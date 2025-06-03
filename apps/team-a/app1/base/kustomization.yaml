@@ -1,0 +1,7 @@
+resources:
+  - ./templates/deployment.yaml
+
+helmCharts:
+  - name: app1
+    path: .
+    valuesFile: values.yaml
