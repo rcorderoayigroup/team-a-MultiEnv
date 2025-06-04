@@ -1,0 +1,7 @@
+resources:
+  - ../../base
+
+# helmCharts:  # Descomentar si querés usar Helm con Kustomize
+#   - name: app1
+#     path: ../../base
+#     valuesFile: values-dev.yaml
