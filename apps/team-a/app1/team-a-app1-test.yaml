@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://your.git.repo/here.git
+    repoURL: https://github.com/rcorderoayigroup/team-a-MultiEnv.git
     targetRevision: HEAD
     path: apps/team-a/app1/overlays/test
   destination:
